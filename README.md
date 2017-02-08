@@ -42,6 +42,7 @@ Don't forget that you must have a base case for your recursive method or you wil
 | **Total**           | **100**|
 
 ## Outside Resources Used
+http://stackoverflow.com/questions/18368611/how-do-i-transpose-a-multi-dimensional-array
 
 ## Known Problems, Issues, And/Or Errors in the Program
-Started late into the project does not place x's or o's or check to see if move is valid.
+Started late into the project does not place x's or o's or check to see if move is valid. Still have not done anything with movements but I know the directions.

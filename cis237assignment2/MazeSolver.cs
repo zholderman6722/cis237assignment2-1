@@ -1,4 +1,8 @@
-﻿using System;
+﻿//CIS 237
+//Author: Zachery Holderman
+//Date: 02-08-2017
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,6 +49,8 @@ namespace cis237assignment2
 
             //Do work needed to use mazeTraversal recursive call and solve the maze.
             //need if statements to track valid movements for down, right, up, left and also to check if maze has been solved.
+
+            //print the maze
             printMaze(maze);
         }
 
@@ -69,7 +75,7 @@ namespace cis237assignment2
             SolveMaze(maze, xStart, yStart--);
             
         }
-        //method to print out a 2d char array called maze
+        //method to print out a 2d char array called maze transposed.
         private void printMaze(char [,] maze)
         {
             for (int i =0; i<= maze.GetLength(0)-1; i++)

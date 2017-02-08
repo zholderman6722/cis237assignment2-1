@@ -1,4 +1,9 @@
-﻿using System;
+﻿//CIS 237
+//Author: Zachery Holderman
+//Date: 02-08-2017
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
