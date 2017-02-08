@@ -53,7 +53,9 @@ namespace cis237assignment2
             /// Tell the instance to solve the first maze with the passed maze, and start coordinates.
             /// </summary>
             mazeSolver.SolveMaze(maze1, X_START, Y_START);
-
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
             //Solve the transposed maze.
             mazeSolver.SolveMaze(maze2, X_START, Y_START);
 
@@ -75,9 +77,20 @@ namespace cis237assignment2
         /// </summary>
         /// <param name="mazeToTranspose"></param>
         /// <returns>transposedMaze</returns>
+        //method attempting to transpose array 
         static char[,] transposeMaze(char[,] mazeToTranspose)
         {
-            //Write code her to create a transposed maze.
+            //Write code here to create a transposed maze.
+            char[,] tempMaze = new char[mazeToTranspose.GetLength(0),mazeToTranspose.GetLength(0)];
+            for(int j= 0; j<=mazeToTranspose.GetLength(0)-1; j++)
+            {
+                for (int i = 0; i<=mazeToTranspose.GetLength(0)-1; i++)
+                {
+                    tempMaze[j, i] = mazeToTranspose[i, j];
+                    Console.Write(tempMaze[j,i]);
+                }
+                Console.WriteLine();
+            }
             return new char[1, 1];
         }
     }

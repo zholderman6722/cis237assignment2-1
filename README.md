@@ -2,6 +2,7 @@
 ## Due 02-08-2017
 
 ## Author
+	Zachery Holderman
 
 ## Description
 
@@ -43,3 +44,4 @@ Don't forget that you must have a base case for your recursive method or you wil
 ## Outside Resources Used
 
 ## Known Problems, Issues, And/Or Errors in the Program
+Started late into the project does not place x's or o's or check to see if move is valid.

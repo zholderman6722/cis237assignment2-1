@@ -25,7 +25,8 @@ namespace cis237assignment2
         /// Default Constuctor to setup a new maze solver.
         /// </summary>
         public MazeSolver()
-        {}
+        { 
+        }
 
 
         /// <summary>
@@ -43,6 +44,8 @@ namespace cis237assignment2
             this.yStart = yStart;
 
             //Do work needed to use mazeTraversal recursive call and solve the maze.
+            //need if statements to track valid movements for down, right, up, left and also to check if maze has been solved.
+            printMaze(maze);
         }
 
 
@@ -53,7 +56,30 @@ namespace cis237assignment2
         /// </summary>
         private void mazeTraversal()
         {
-            //Implement maze traversal recursive call
+            //Implement maze traversal recursive call 
+            //Calls solveMaze to move down
+            SolveMaze(maze, xStart--, yStart);
+
+            //Calls solveMaze to move right
+            SolveMaze(maze, xStart, yStart++);
+            
+            //calls solveMaze to move up
+            SolveMaze(maze, xStart++, yStart);
+            //Calls solve maze to move left
+            SolveMaze(maze, xStart, yStart--);
+            
+        }
+        //method to print out a 2d char array called maze
+        private void printMaze(char [,] maze)
+        {
+            for (int i =0; i<= maze.GetLength(0)-1; i++)
+            {
+                for (int j = 0; j <= maze.GetLength(0)-1; j++)
+                {
+                    Console.Write( maze[i,j]);
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
